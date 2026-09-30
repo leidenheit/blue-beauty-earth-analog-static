@@ -63,5 +63,7 @@ new watch package is never needed for this.
 
 ## License
 
-The watch face and this site: GNU General Public License v3.0, see
-[LICENSE](LICENSE). Copyright 2026 Attila "leidenheit" Varga.
+Copyright 2026 Attila "leidenheit" Varga. All rights reserved, see
+[LICENSE](LICENSE). That covers the watch face and the content of this site.
+The repository is public only because GitHub Pages is free for public
+repositories; being readable does not make it open source.
