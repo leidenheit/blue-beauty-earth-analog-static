@@ -1,7 +1,7 @@
 # GitHub Pages site of the Blue Beauty watch face.
 #
 # THE ONE LINE THAT CHANGES: store_url is where
-# https://leidenheit.github.io/bluebeauty/ sends people. The watch face ships
+# https://leidenheit.github.io/blue-beauty-earth-analog-static/ sends people. The watch face ships
 # that address (phone settings share link + the QR code on the watch), and an
 # installed copy never picks up a new one - so the ADDRESS must never change,
 # only this target. Three phases, see README.md:

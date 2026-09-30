@@ -22,7 +22,7 @@ this redirect changes.
 
 ## The one setting: `store_url` in `_config.yml`
 
-| Phase | `store_url` | What `/bluebeauty/` does |
+| Phase | `store_url` | What the share link does |
 |---|---|---|
 | Beta test | the beta entry's page | forwards there (only the uploading account can open it) |
 | Garmin review | `""` (empty) | shows a landing page: picture, name, "coming soon", links |
@@ -38,22 +38,27 @@ new watch package is never needed for this.
 
 - **The address never changes.** An installed watch face keeps the share link
   it was installed with. Do not rename the repo, do not move the site, and keep
-  the trailing slash. Without it, GitHub first redirects `/bluebeauty` to
-  `/bluebeauty/`.
+  the trailing slash. Without it, GitHub first redirects to the address
+  with the slash.
 - **The site stays online** as long as the watch face is in the store.
-- The watch table in `hardware-requirements.md` is generated. Change it in the
-  watch face repo: `python tools/make_pages_devices.py` rewrites the block
-  between the marker comments from `manifest.xml` and the SDK.
+- Two parts of `hardware-requirements.md` are generated; change them in the
+  watch face repo with `python tools/make_pages_devices.py`. It writes the
+  watch table (from `manifest.xml` and the SDK) and the figures of the turning
+  Earth (frames, seconds, degrees, read from
+  `tools/render_scrolling_planet_animations.py`) between their marker comments.
+  After a change to the renderer, rebuild the planet assets (`build-all.ps1`)
+  as well, or the watch keeps playing the old animation while this page
+  already describes the new one.
 
 ## Setup (once)
 
-1. Create the **public** repo `leidenheit/bluebeauty` on GitHub. Pages is free
+1. Create the **public** repo `leidenheit/blue-beauty-earth-analog-static` on GitHub. Pages is free
    only for public repos.
-2. Push this repo to it: `git remote add origin https://github.com/leidenheit/bluebeauty.git`,
+2. Push this repo to it: `git remote add origin https://github.com/leidenheit/blue-beauty-earth-analog-static.git`,
    then `git push -u origin main`.
 3. On GitHub, open Settings > Pages and set Source to "Deploy from a branch",
    Branch `main`, folder `/ (root)`.
-4. After 1-2 minutes open https://leidenheit.github.io/bluebeauty/ on the PC and
+4. After 1-2 minutes open https://leidenheit.github.io/blue-beauty-earth-analog-static/ on the PC and
    on the phone. Both must land on the store page.
 
 ## License
