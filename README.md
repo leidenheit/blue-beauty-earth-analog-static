@@ -4,9 +4,9 @@ The public web address of the Garmin watch face **Blue Beauty Earth Analog**:
 
 | Page | URL |
 |---|---|
-| Share link (redirects to the Connect IQ Store) | https://leidenheit.github.io/bluebeauty/ |
-| Requirements (devices, features, permissions) | https://leidenheit.github.io/bluebeauty/hardware-requirements.html |
-| License | https://leidenheit.github.io/bluebeauty/license.html |
+| Share link (redirects to the Connect IQ Store) | https://leidenheit.github.io/blue-beauty-earth-analog-static/ |
+| Requirements (devices, features, permissions) | https://leidenheit.github.io/blue-beauty-earth-analog-static/hardware-requirements.html |
+| License | https://leidenheit.github.io/blue-beauty-earth-analog-static/license.html |
 
 The watch face ships the first address: as the share link in its phone
 settings and as the QR code in its on-watch menu. The Store entry's
