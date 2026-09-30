@@ -1,0 +1,47 @@
+---
+# The address the watch face ships: https://leidenheit.github.io/bluebeauty/
+# With store_url set (_config.yml) this page only forwards to the Connect IQ
+# Store; with store_url empty it is the landing page (the review phase).
+# GitHub Pages cannot send a real 301, so the forwarding is a meta refresh for
+# browsers without JavaScript, location.replace for the rest (it keeps this
+# page out of the back-button history), and a visible link as the last resort.
+layout: null
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.title }} - Garmin watch face</title>
+<meta name="description" content="{{ site.description }}">
+{%- if site.store_url != "" %}
+<meta http-equiv="refresh" content="0; url={{ site.store_url }}">
+<link rel="canonical" href="{{ site.store_url }}">
+<script>location.replace({{ site.store_url | jsonify }});</script>
+{%- endif %}
+<link rel="icon" href="{{ '/assets/icon-128.png' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body class="landing">
+<main>
+  <img class="face" src="{{ '/assets/face.png' | relative_url }}" width="340" height="340"
+       alt="The Blue Beauty watch face: steel hands, three round data fields and the Earth on the right">
+  <h1>{{ site.title }}</h1>
+  <p class="lead">{{ site.description }}</p>
+{%- if site.store_url != "" %}
+  <p><a class="button" href="{{ site.store_url }}">Open it in the Connect IQ Store</a></p>
+{%- else %}
+  <p class="soon">Coming soon to the Garmin Connect IQ Store.</p>
+{%- endif %}
+  <nav>
+    <a href="{{ '/hardware-requirements.html' | relative_url }}">Requirements</a>
+    <a href="{{ '/license.html' | relative_url }}">License</a>
+    <a href="mailto:{{ site.contact_email }}">Contact</a>
+  </nav>
+</main>
+<footer>
+  &copy; 2026 {{ site.author }}. Garmin and Connect IQ are trademarks of Garmin Ltd.
+  or its subsidiaries; this watch face is not affiliated with or endorsed by Garmin.
+</footer>
+</body>
+</html>

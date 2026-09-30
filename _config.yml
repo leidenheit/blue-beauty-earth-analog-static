@@ -1,0 +1,32 @@
+# GitHub Pages site of the Blue Beauty watch face.
+#
+# THE ONE LINE THAT CHANGES: store_url is where
+# https://leidenheit.github.io/bluebeauty/ sends people. The watch face ships
+# that address (phone settings share link + the QR code on the watch), and an
+# installed copy never picks up a new one - so the ADDRESS must never change,
+# only this target. Three phases, see README.md:
+#
+#   beta test  the beta entry's page (only the uploading account can see it)
+#   review     ""  -> index.html shows a landing page instead of redirecting,
+#                     so Garmin's reviewer never meets a link that goes nowhere
+#   release    the release entry's page from the developer dashboard
+#
+# Use the plain store address without "?tid=..." - that parameter is Garmin's
+# tracking of where a visit came from, not part of the page.
+store_url: "https://apps.garmin.com/apps/670a5fbb-7119-49ed-9b6d-c1d4b294d780"
+
+title: Blue Beauty Earth Analog
+description: A premium analog watch face for Garmin watches, built around a living Earth.
+author: Attila "leidenheit" Varga
+contact_email: attila.varga.dev@gmail.com
+lang: en
+
+# No theme: _layouts/default.html is the whole look, so nothing changes under
+# the pages when GitHub updates its default theme.
+theme: null
+markdown: kramdown
+kramdown:
+  auto_ids: true
+
+exclude:
+  - README.md

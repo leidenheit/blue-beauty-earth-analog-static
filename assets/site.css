@@ -1,0 +1,132 @@
+/* Blue Beauty - the watch face is dark, so is its page. */
+:root {
+  --bg: #05070d;
+  --surface: #0d1320;
+  --line: #1f2a3d;
+  --text: #dfe6f0;
+  --muted: #8d9bb0;
+  --accent: #36c6f0;
+  --accent-ink: #03141c;
+  --ok: #5fd08a;
+  --no: #6b778a;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+a { color: var(--accent); }
+a:hover { text-decoration: none; }
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 16px;
+  border-bottom: 1px solid var(--line);
+}
+header .brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+header .brand img { border-radius: 50%; }
+header nav { display: flex; gap: 18px; }
+
+main.doc {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 8px 16px 48px;
+}
+main.doc h1 { font-size: 1.9rem; line-height: 1.25; margin: 28px 0 8px; }
+main.doc h2 { font-size: 1.3rem; margin: 40px 0 8px; padding-top: 8px; border-top: 1px solid var(--line); }
+main.doc h3 { font-size: 1.05rem; margin: 24px 0 6px; }
+main.doc p, main.doc li { color: var(--text); }
+main.doc .lead { color: var(--muted); font-size: 1.05rem; }
+
+/* Tables scroll inside themselves on a phone instead of widening the page. */
+main.doc table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 12px 0 20px;
+  font-size: 0.94rem;
+}
+main.doc th, main.doc td {
+  padding: 7px 10px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+main.doc th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+main.doc td.c, main.doc th.c { text-align: center; }
+
+main.doc code {
+  background: var(--surface);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+main.doc pre {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+}
+
+.yes { color: var(--ok); }
+.no { color: var(--no); }
+
+footer {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 20px 16px 32px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+/* Landing page (index.html while store_url is empty, or when JS/refresh fail). */
+body.landing { display: flex; flex-direction: column; min-height: 100vh; }
+body.landing main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 16px;
+}
+body.landing .face { width: min(340px, 80vw); height: auto; }
+body.landing h1 { font-size: 2rem; margin: 28px 0 4px; }
+body.landing .lead { color: var(--muted); max-width: 520px; margin: 0 0 20px; }
+body.landing .soon { color: var(--accent); font-weight: 600; }
+body.landing nav { display: flex; gap: 22px; margin-top: 18px; }
+body.landing footer { text-align: center; border-top: 0; }
+.button {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-ink);
+  font-weight: 600;
+  text-decoration: none;
+}

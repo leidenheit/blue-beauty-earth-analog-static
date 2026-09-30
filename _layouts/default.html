@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} - {{ site.title }}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="icon" href="{{ '/assets/icon-128.png' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+</head>
+<body>
+<header>
+  <a class="brand" href="{{ '/' | relative_url }}">
+    <img src="{{ '/assets/icon-128.png' | relative_url }}" width="32" height="32" alt="">
+    {{ site.title }}
+  </a>
+  <nav>
+    <a href="{{ '/hardware-requirements.html' | relative_url }}">Requirements</a>
+    <a href="{{ '/license.html' | relative_url }}">License</a>
+  </nav>
+</header>
+<main class="doc">
+{{ content }}
+</main>
+<footer>
+  &copy; 2026 {{ site.author }} &middot; <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a><br>
+  Garmin and Connect IQ are trademarks of Garmin Ltd. or its subsidiaries; this watch
+  face is not affiliated with or endorsed by Garmin.
+</footer>
+</body>
+</html>
