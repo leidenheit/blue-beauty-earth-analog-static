@@ -40,6 +40,7 @@ one, the settings on the watch don't offer it.
 | D2™ Mach 2 Pro | 454 x 454 | 6.0 | &#10003; | &#10003; | &#10003; | &#10003; | &ndash; |
 | Descent™ G2 | 390 x 390 | 5.1 | &#10003; | &#10003; | &#10003; | &#10003; | &ndash; |
 | Descent™ Mk3 43mm / Mk3i 43mm | 390 x 390 | 5.1 | &#10003; | &#10003; | &#10003; | &#10003; | &ndash; |
+| Descent™ Mk3i 51mm | 454 x 454 | 5.1 | &#10003; | &#10003; | &#10003; | &#10003; | &ndash; |
 | epix™ (Gen 2) / quatix® 7 Sapphire | 416 x 416 | 5.2 | &#10003; | &#10003; | &#10003; | &#10003; | &ndash; |
 | epix™ Pro (Gen 2) 42mm | 390 x 390 | 5.2 | &#10003; | &#10003; | &#10003; | &#10003; | &ndash; |
 | epix™ Pro (Gen 2) 47mm / quatix® 7 Pro | 416 x 416 | 5.2 | &#10003; | &#10003; | &#10003; | &#10003; | &ndash; |
@@ -72,7 +73,7 @@ one, the settings on the watch don't offer it.
 | vívoactive® 5 | 390 x 390 | 5.2 | &ndash; | &ndash; | &ndash; | &ndash; | &#10003; |
 | vívoactive® 6 | 390 x 390 | 6.0 | &ndash; | &ndash; | &ndash; | &#10003; | &#10003; |
 
-39 device profiles in the Connect IQ SDK; a row that names several watches covers all of them.
+40 device profiles in the Connect IQ SDK; a row that names several watches covers all of them.
 
 <!-- devices:end -->
 
