@@ -9,8 +9,8 @@ permalink: /hardware-requirements.html
 
 {: .lead}
 Blue Beauty Earth Analog is a watch face for Garmin watches with a round AMOLED
-or MicroLED display. This page lists what it needs and what each feature depends on, so
-you know before you buy.
+or MicroLED display. This page lists what it needs and what each feature
+depends on, so you know before you buy.
 
 ## At a glance
 
@@ -21,6 +21,9 @@ you know before you buy.
 - **No additional hardware.** You don't need a chest strap, an external sensor
   or a companion app. Everything the face shows comes from the watch itself or
   through Garmin Connect.
+- **A touchscreen is a plus, not a must.** It adds two shortcuts: holding a
+  data field opens the matching widget of your watch, and the on-watch colour
+  picker follows your finger. Every setting also works with the buttons.
 
 ## Supported watches
 
@@ -91,6 +94,22 @@ authoritative one.
   Pulse Ox, Body Battery, stress, intensity minutes, step goal, move bar and
   battery.
 
+### A touchscreen
+
+Every supported watch has one except the Instinct® 3 AMOLED.
+
+- **Hold to open:** hold a round data field or a status arc for about a second,
+  and the watch opens its own widget for that data: steps, heart rate, Body
+  Battery, stress, intensity minutes, the weather and more. Distance and the
+  move bar have no widget of their own; holding them, or any other part of the
+  face, does what your watch does with a hold anyway. A field you have switched
+  off reacts to nothing, and neither does the always-on look.
+- **The colour picker by touch:** every colour setting on the watch opens a live
+  preview of the face with the palette along the edge. Swipe or drag anywhere to
+  move through the colours, tap a dot to jump to it, and tap the colour's name in
+  the middle to keep it. With the buttons: UP and DOWN to move, START to keep,
+  BACK to leave without a change.
+
 ### Your phone, through Garmin Connect
 
 - **Weather temperature** and the **weather symbol** of the always-on look. The
@@ -122,6 +141,7 @@ When you install the face, the watch asks you to allow these permissions:
 
 | Permission | What the face uses it for |
 |---|---|
+| Complications | Opening your watch's own widget for a data field when you hold it. The face reads no values through it. |
 | Positioning | The last known position, and only to calculate sunrise and sunset when the weather data brings no location. |
 | Sensor history | The latest Body Battery, stress, Pulse Ox, elevation and air-pressure readings. |
 | User profile | Your sleep and wake times, for the night Earth and the night colours. |
