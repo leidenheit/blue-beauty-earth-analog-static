@@ -22,7 +22,7 @@ depends on, so you know before you buy.
   or a companion app. Everything the face shows comes from the watch itself or
   through Garmin Connect.
 - **A touchscreen is a plus, not a must.** It adds two shortcuts: holding a
-  data field opens the matching widget of your watch, and the on-watch colour
+  data field opens the matching widget of your watch, and the on-watch color
   picker follows your finger. Every setting also works with the buttons.
 
 ## Supported watches
@@ -104,9 +104,9 @@ Every supported watch has one except the Instinct® 3 AMOLED.
   move bar have no widget of their own; holding them, or any other part of the
   face, does what your watch does with a hold anyway. A field you have switched
   off reacts to nothing, and neither does the always-on look.
-- **The colour picker by touch:** every colour setting on the watch opens a live
+- **The color picker by touch:** every color setting on the watch opens a live
   preview of the face with the palette along the edge. Swipe or drag anywhere to
-  move through the colours, tap a dot to jump to it, and tap the colour's name in
+  move through the colors, tap a dot to jump to it, and tap the color's name in
   the middle to keep it. With the buttons: UP and DOWN to move, START to keep,
   BACK to leave without a change.
 
@@ -125,7 +125,7 @@ Every supported watch has one except the Instinct® 3 AMOLED.
 
 - **Always-on look**: the watch's own *Display > Always On* setting decides
   whether it appears. The face has no switch of its own for it.
-- **Night Earth and the warm night colours** follow your sleep. The face uses
+- **Night Earth and the warm night colors** follow your sleep. The face uses
   the watch's sleep mode, or else the sleep and wake times from your Garmin
   user profile.
 - **Pulse Ox** shows a value once the watch has measured one. You set when it
@@ -144,7 +144,7 @@ When you install the face, the watch asks you to allow these permissions:
 | Complications | Opening your watch's own widget for a data field when you hold it. The face reads no values through it. |
 | Positioning | The last known position, and only to calculate sunrise and sunset when the weather data brings no location. |
 | Sensor history | The latest Body Battery, stress, Pulse Ox, elevation and air-pressure readings. |
-| User profile | Your sleep and wake times, for the night Earth and the night colours. |
+| User profile | Your sleep and wake times, for the night Earth and the night colors. |
 
 The face has **no internet access**: it doesn't request the communications
 permission. It collects, stores and sends no personal data. Every value is read
@@ -159,7 +159,7 @@ The Earth is a pre-rendered animation of **120 frames at 10 frames per second, 1
 
 - It starts again from the same position every time the screen lights up. It plays only while the screen is fully lit, and the watch decides how long that is (usually a few seconds after you raise your wrist). So you usually see the first part of the 30° turn, never a full revolution.
 - It is not a live globe. It shows neither the current time of day nor the real position of the sun. The night side is its own animation, shown while you sleep.
-- In the always-on look the Earth is a dimmed still image. With the animation switched off in the settings, the lit face shows the first frame as a still image.
+- In the always-on look the Earth is a still image drawn in fine dots of light: an even arc for its rim, dense dots on the continents, sparse ones over the oceans. On the night side the city lights shine in shades from light gold to warm white, and with the warm night colors on, the Earth takes the same warm tone as the hands and the date. With the animation switched off in the settings, the lit face shows the first frame as a still image.
 
 <!-- animation:end -->
 
