@@ -13,7 +13,7 @@
 #
 # Use the plain store address without "?tid=..." - that parameter is Garmin's
 # tracking of where a visit came from, not part of the page.
-store_url: "https://apps.garmin.com/apps/670a5fbb-7119-49ed-9b6d-c1d4b294d780"
+store_url: ""
 
 title: Blue Beauty Earth Analog
 description: A premium analog watch face for Garmin watches, built around a photorealistic Earth.
